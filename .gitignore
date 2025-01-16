@@ -86,11 +86,60 @@ target/
 # Mypy cache
 .mypy_cache/
 
-# Exclude virtual environment
+# Virtual environment
 .venv/
+venv/
 
-# Exclude trained models
-# /models/
+# Trained models
+/models/
 
-# exclude data from source control by default
-# /data/
+# Data files
+/data/
+*.csv
+*.tsv
+*.parquet
+*.h5
+
+# R-specific
+# R session data
+.RData
+.Rhistory
+.Rapp.history
+.Rproj.user/
+
+# R Markdown and knitr cache
+*_cache/
+*.Rproj
+
+# Compiled code
+*.o
+*.so
+*.dll
+
+# Logs and reports
+*.log
+
+# Output of knitr and R markdown
+*.utf8.md
+*.knit.md
+
+# Shiny applications
+.Rproj.user/
+
+# renv environment
+/renv/
+*.lock
+renv/library/
+renv/staging/
+
+# Temporary files
+*.tmp
+*.swp
+
+# # Exclude generated plots and images
+# *.png
+# *.jpeg
+# *.jpg
+# *.pdf
+
+.Rprofile
